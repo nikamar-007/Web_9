@@ -1,0 +1,56 @@
+
+:root{
+  --bg:#f5f6f8;
+  --fg:#111;
+  --accent:#1f6feb;
+  --header-bg:#0b1220;
+  --header-fg:#fff;
+  --footer-bg:#111418;
+  --footer-fg:#e8eaed;
+  --card-bg:#ffffff;
+  --muted:#667085;
+  --danger:#b42318;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+  background:var(--bg); color:var(--fg);
+  display:flex; flex-direction:column;
+}
+header{
+  background:var(--header-bg); color:var(--header-fg);
+  padding:16px 20px; display:flex; align-items:center; gap:16px;
+  box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+header img{height:36px; width:auto}
+header h1{font-size:20px; margin:0}
+.title-sub{font-size:12px; color:#b6c5ff}
+main{flex:1; padding:24px 20px; max-width:1000px; width:100%; margin:0 auto}
+.controls{
+  background:var(--card-bg); border:1px solid #e4e7ec; border-radius:12px; padding:16px; margin-bottom:16px
+}
+.controls form{display:grid; grid-template-columns: repeat(5, minmax(120px,1fr)); gap:12px; align-items:end}
+.controls label{font-size:12px; color:var(--muted); display:block; margin-bottom:6px}
+.controls input, .controls select{
+  width:100%; padding:10px 12px; border:1px solid #d0d5dd; border-radius:10px; background:#fff; color:#111;
+}
+.controls button{
+  padding:10px 14px; border-radius:10px; border:1px solid #0b5cd6; background:var(--accent); color:#fff; font-weight:600; cursor:pointer;
+}
+.card{
+  background:var(--card-bg); border:1px solid #e4e7ec; border-radius:12px; padding:16px; margin-bottom:16px
+}
+ul,ol{margin:12px 0 12px 24px}
+.table{border-collapse:collapse; width:100%}
+.table th,.table td{border:1px solid #000; padding:8px; text-align:left}
+.block-row{display:inline-block; border:2px solid red; padding:8px; margin-right:8px; margin-bottom:8px}
+.stats{display:grid; grid-template-columns: repeat(4, minmax(120px,1fr)); gap:12px}
+.stat{background:#fafafa; border:1px dashed #e4e7ec; padding:12px; border-radius:10px}
+.stat b{display:block; font-size:12px; color:var(--muted); margin-bottom:4px}
+footer{
+  background:var(--footer-bg); color:var(--footer-fg);
+  padding:14px 20px; position:sticky; bottom:0; margin-top:auto
+}
+footer .inner{max-width:1000px; margin:0 auto; display:flex; justify-content:space-between; font-size:12px}
+.error{color:var(--danger); font-weight:600}
