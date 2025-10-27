@@ -92,7 +92,7 @@ function lineFmt($x,$f){
 <header>
   <img src="images/MPU_logo.png" alt="Логотип">
   <div>
-    <h1>Лабораторная работа №9 — PHP</h1>
+    <h1>Лабораторная работа №9 — Основы алгоритмов</h1>
     <div class="title-sub">Вариант <?=htmlspecialchars($variant)?> • <?=htmlspecialchars($studentName)?> • <?=htmlspecialchars($group)?></div>
   </div>
 </header>
